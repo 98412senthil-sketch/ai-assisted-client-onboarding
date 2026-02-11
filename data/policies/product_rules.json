@@ -1,0 +1,13 @@
+{
+  "mid_corporate": {
+    "india": {
+      "medium_risk": {
+        "eligible_products": ["Trade Finance", "Working Capital Loan"],
+        "fee_range": "0.5% - 1.2%",
+        "max_limit_cr": 20,
+        "approval_required_above_cr": 15
+      }
+    }
+  }
+}
+ 
