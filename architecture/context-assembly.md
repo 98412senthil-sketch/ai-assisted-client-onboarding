@@ -165,3 +165,33 @@ risk_flags:
 decision_constraints:
   approval_required:
   escalation_level:
+
+---
+
+## Failure Handling & Edge Cases
+
+The Context Assembly Layer must handle the following scenarios:
+
+### 1. No Relevant Policy Found
+- Do not invoke LLM.
+- Return deterministic error.
+- Escalate to manual review.
+
+### 2. Incomplete Client Data
+- Flag missing attributes.
+- Do not attempt inference.
+- Require data completion before proceeding.
+
+### 3. Low Confidence Retrieval (Semantic Search)
+- Apply minimum similarity threshold.
+- If threshold not met, fallback to deterministic retrieval only.
+- Escalate if ambiguity persists.
+
+### 4. Excessive Context Size
+- Enforce token limit safeguards.
+- Prioritize policy over client metadata.
+- Trim non-essential clauses.
+
+The system must fail safely and predictably.
+
+No uncontrolled reasoning should occur due to incomplete or ambiguous context.
