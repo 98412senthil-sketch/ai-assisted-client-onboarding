@@ -23,29 +23,10 @@ The system is intentionally designed as a **reference implementation**, emphasiz
 
 ---
 
-## 🔄 High-Level Architecture
+## High-Level Architecture
 
-Client Request
-↓
-Context Assembly Layer
-↓
-Deterministic Precheck
-↓
-Knowledge Retrieval
-(Vector DB + Metadata Filter)
-↓
-LLM Reasoning Service
-(Structured JSON Output)
-↓
-Decision Intelligence Layer (POS-lite)
-↓
-Final Outcome
-(Recommend / Escalate / Reject)
+The system follows a governance-first, layered architecture separating deterministic controls from probabilistic AI reasoning.
 
-
-
-
----
 
 ### Architecture Diagram
 
