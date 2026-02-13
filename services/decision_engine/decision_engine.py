@@ -26,9 +26,12 @@ def final_decision(precheck_result, llm_output=None, confidence_threshold=0.75):
 
         return {
             "final_status": "RECOMMEND_APPROVAL",
-            "recommended_products": llm_output["recommended_products"],
-            "fee_range": llm_output["suggested_fee_range"]
-        }
+            "recommended_products": llm_output.get("recommended_products", []),
+            "max_amount": llm_output.get("max_amount", "Not specified"),
+            "pricing_notes": llm_output.get("pricing_notes", "Not specified"),
+            "risk_commentary": llm_output.get("risk_commentary", ""),
+            "confidence": llm_output.get("confidence", 0.0)
+            }   
 
     return {
         "final_status": "UNDETERMINED"
