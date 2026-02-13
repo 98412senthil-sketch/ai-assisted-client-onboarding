@@ -138,24 +138,31 @@ python run_context_test.py
 
 ##  Repository Structure
 
+```text
 ai-assisted-client-onboarding/
 │
 ├── README.md
 ├── architecture/
+│   └── ai_onboarding_architecture.png
+│
 ├── data/
-│ ├── clients/
-│ └── policies/
+│   ├── clients/
+│   │   └── sample_client.json
+│   └── policies/
+│
 ├── services/
-│ ├── context_assembly/
-│ ├── knowledge_ingestion/
-│ ├── llm_gateway/
-│ ├── decision_engine/
-│ └── audit/
+│   ├── context_assembly/
+│   ├── knowledge_ingestion/
+│   ├── llm_gateway/
+│   ├── decision_engine/
+│   └── audit/
+│
 ├── build_knowledge_base.py
 └── run_context_test.py
+```
 
 
----
+
 
 ##  Status
 
