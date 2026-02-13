@@ -44,7 +44,7 @@ Final Outcome (Recommend / Escalate / Reject)
 
 ### Architecture Diagram
 
-![AI-Assisted Client Onboarding Architecture](architecture/ai_onboarding_architecture.png)
+![AI-Assisted Client Onboarding Architecture](architecture/AI-assited-onboarding-Arch.png)
 
 *Governance-first architecture integrating deterministic controls, hybrid retrieval, struc
 
