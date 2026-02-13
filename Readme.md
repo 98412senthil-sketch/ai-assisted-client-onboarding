@@ -23,7 +23,7 @@ The system is intentionally designed as a **reference implementation**, emphasiz
 
 ---
 
-## High-Level Architecture
+## 🔄 High-Level Architecture
 
 Client Request
 ↓
@@ -31,13 +31,18 @@ Context Assembly Layer
 ↓
 Deterministic Precheck
 ↓
-Knowledge Retrieval (Vector DB + Metadata Filter)
+Knowledge Retrieval
+(Vector DB + Metadata Filter)
 ↓
-LLM Reasoning Service (Structured JSON Output)
+LLM Reasoning Service
+(Structured JSON Output)
 ↓
 Decision Intelligence Layer (POS-lite)
 ↓
-Final Outcome (Recommend / Escalate / Reject)
+Final Outcome
+(Recommend / Escalate / Reject)
+
+
 
 
 ---
